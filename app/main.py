@@ -17,4 +17,4 @@ def copy_file(command: str) -> None:
             for line in file_one:
                 file_two.write(line)
     except FileNotFoundError:
-        return
+        print(f"Error: Source file '{source}' does not exist.")
